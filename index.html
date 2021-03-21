@@ -10,8 +10,8 @@
 }
 body{
   color: azure;
-  background-size: contain;
-  background-image: url("file://D:/Him Pc desktop/poly/polyu sem2/comp3421/bg1.jpg") ;
+  background-size: cover;
+  background-image: url("https://user-images.githubusercontent.com/81008403/111873238-5658ee80-89ca-11eb-90df-1324612b85be.jpg") ;
   }
 .tab { 
   display:inline-block; 
@@ -22,6 +22,7 @@ div.opening{
   position: sticky;
   top: 0;
   background-color: #555;
+  padding: 10px 15px;
   font-size: 30px;
   z-index: 1;
 }
@@ -38,35 +39,33 @@ img.polyu{
 }
 div.personal_information{
   padding-top: 5px;
-  background: url("file://D:/Him Pc desktop/poly/polyu sem2/comp3421/my picture1.jpeg") no-repeat right ;
+  background: url("https://user-images.githubusercontent.com/81008403/111873437-3d9d0880-89cb-11eb-9e40-6b19d2a4d837.jpeg") no-repeat right ;
   background-size: 20% 100%;
+ 
 }
 div.intro{
-  font-size: 20px;
   width: 90%;
-  padding-left: 35px;
+  padding: 10px;
   animation: left_animation;
   animation-duration: 3s;
   position: relative;
   animation-timing-function: ease-out;
 }
 div.Education_Background{
-  font-size: 20px;
-  width: 90%;
-  padding-left: 30px;
   animation: right_animation;
   animation-duration: 4s;
   position: relative;
   animation-timing-function: ease-in-out; 
 }
 div.contact{
-  font-size: 25px;
+  font-size:25px;
   animation: left_animation;
   animation-duration: 4s;
   position: relative;
   animation-timing-function: ease-in; 
 }
 div.intro_text{
+  font-size:25px;
   border-width: 10px;
   border-style: dotted;
   border-color: blueviolet;
@@ -88,12 +87,14 @@ table, th, td {
   border-collapse: collapse;
 }
 table.education{
-  height: 140px;
+  font-size:25px;
+  height: 120px;
   text-align: left;
   width:100%;
   border-color: chartreuse;
 }
 ul.contact{
+  font-size:25px;
   list-style-type: square;
 }
 
@@ -106,6 +107,7 @@ ul.contact{
   to {right: 0%;}
 }
 iframe.cajon{
+  padding-left: 30px;
   position: relative;
   height: 100%;
   width: 90%;
@@ -126,12 +128,14 @@ table tr:hover {
 table th:hover {
   background-color: rgb(129, 129, 128);
 }
+p.cajon{
+  font-size:25px;
+}
 </style>
 <head>
 <title>Cheung Ling Him 20032795D</title>
 </head>
 <body>
-{/* personal information */}
 <div class="opening">Cheung Ling Him 20032795D</div>
 
 <div class="personal_information">
@@ -146,8 +150,8 @@ table th:hover {
 <hr></hr>
 </div>
 
-{/* Introduction */}
-<h2>Introduction About Me:</h2>
+
+<h2>Introduction About Me</h2>
 <div class="intro">
 <div class="intro_text" border="8px dotted blueviolet">
 <p title ="Introduction">
@@ -160,17 +164,16 @@ table th:hover {
 Tennis is one of my favorite sport. And I have learned it for around ten years. 
 Although I have not played it very well, it helps me to build up my sports habit. 
 Until now, I still playing tennis with my brother or friends every week.
-I like to listen to music and I want to learn more about how to enjoy music, so I started to learn how to play Cajón, hope that I can learn more about music through learning this musical instrument.
+I like to listen to music and I want to learn more about how to enjoy music, so I started to learn how to play Cajon, hope that I can learn more about music through learning this musical instrument.
 </p>
 </div>
-<p class="cajon">Know more what is Cajón:</p>
+<p class="cajon">Know more what is Cajon:</p>
 <iframe title="google" 
 src="https://en.wikipedia.org/wiki/Caj%C3%B3n" class="cajon"> 
 </iframe>
 </div>
 
-{/* Education Background */}
-<h2>My Education Background:</h2>
+<h2>My Education Background</h2>
 <div class="Education_Background">
 <table class="education" title ="Education Background">
 <tr>  
@@ -183,7 +186,7 @@ src="https://en.wikipedia.org/wiki/Caj%C3%B3n" class="cajon">
     <td>Hong Kong Polytechnic University</td>
     <td>2020-2022</td>
     <td>BSc(Hons) in Data Science and Analytics</td>
-    <td>  <a class="polyu" href="https://www.polyu.edu.hk/en/" target="_blank">
+    <td>  <a class="polyu" href="https://www.polyu.edu.hk/en/">
     <img class="polyu" src="https://www.polyu.edu.hk/-/media/department/home/content/about-polyu/university-identity/logo_1200x672_with-bg.jpg?bc=ffffff&h=336&w=600&hash=0528CF84BDBC0BCD5403F0CD3A66D0D2" alt="POLYU LOGO" width="75" target="_blank"></img>
     Know more about <abbr title= "Hong Kong Polytechnic University"> POLYU</abbr></a></td>
 </tr>
@@ -191,7 +194,7 @@ src="https://en.wikipedia.org/wiki/Caj%C3%B3n" class="cajon">
     <td>Hong Kong Polytechnic University Hong Kong Community College</td>
     <td>2018-2020</td>
     <td>Associate in Statistics and Data Science</td>
-    <td> <a class="hkcc" href="https://www.hkcc-polyu.edu.hk/en/home/index.html" target="_blank" >
+    <td> <a class="hkcc" href="https://www.hkcc-polyu.edu.hk/en/home/index.html" >
     <img class="hkcc" src="https://www.hkcc-polyu.edu.hk/filemanager/en/content_27/Logo-HKCC.svg" alt="POLYU LOGO" width="150" target="_blank"></img>
     Know more about <abbr title= "Hong Kong Community College"> HKCC</abbr> </a></td>
 </tr>
@@ -200,15 +203,14 @@ src="https://en.wikipedia.org/wiki/Caj%C3%B3n" class="cajon">
 <hr></hr>
 
 
-{/* Contact Me */}
-<h2>Contact Me:</h2>
+<h2>Contact Me</h2>
 <div class="contact">
 <p>please feel free to contact me: </p>
 <ul class="contact"> 
   <li>contact me with email: 
   <a class="email" href="ling-him.cheung@connect.polyu.hk" > ling-him.cheung@connect.polyu.hk</a>
   </li>
-  <li>phone number: 9180 0000
+  <li>phone number: 91800000
   </li>
 </ul>
 <br></br>
